@@ -1,14 +1,14 @@
 let container = document.getElementById("container");
-let color = ["#e74c3c", "8e44ad", "e6e22", "3ece71"]
+let color = ["#e74c3c", "8e44ad", "3498db", "e67e22", "2ece71"];
 let square = 500;
 
 for (let i = 0; i < square; i++) {
-    const.square = document.createElement("div")
+    const square = document.createElement("div")
     square.classList.add("square");
     
     square.addEventListener("mouseover", () => setColor(square))
 
-    square.addEventListener("mouseover", () => removeColor(square))
+    square.addEventListener("mouseout", () => removeColor(square))
 
     container.appendChild(square)
 
